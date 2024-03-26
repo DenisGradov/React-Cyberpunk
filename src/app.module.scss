@@ -1,0 +1,91 @@
+body {
+  background-color: gray;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+
+  .header {
+    &__background {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: auto;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+
+      animation: fadeInOut 5s ease-in-out infinite;
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 0.5;
+        }
+        2%,
+        98% {
+          opacity: 0.9;
+        }
+      }
+    }
+    &Top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      &Left {
+        &__logo {
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+          }
+          transition-duration: 0.3s;
+        }
+      }
+      &Right {
+        &MediaList {
+          &__media {
+            padding: 0px 20px;
+            &:last-child {
+              padding: 0px;
+            }
+            img {
+              &:hover {
+                transform: scale(1.2);
+                transition-duration: 0.3s;
+              }
+              transition-duration: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.objectDisappears {
+  animation: fadeOut 0.5s ease-in-out infinite;
+  @keyframes fadeOut {
+    from {
+      opacity: 1; /* Начальное состояние: полностью непрозрачный */
+    }
+    to {
+      opacity: 0; /* Конечное состояние: полностью прозрачный */
+    }
+  }
+}
+
+.objectAppears {
+  animation: fadeOut 0.5s ease-in-out infinite;
+  @keyframes fadeOut {
+    from {
+      opacity: 0; /* Начальное состояние: полностью непрозрачный */
+    }
+    to {
+      opacity: 1; /* Конечное состояние: полностью прозрачный */
+    }
+  }
+}
