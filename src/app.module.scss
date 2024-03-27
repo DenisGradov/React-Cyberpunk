@@ -1,45 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 body {
-  background-color: gray;
 }
 .wrapper {
   margin: 0 auto;
   width: 100%;
+  height: 100%;
+  max-height: 100vh;
   max-width: 1280px;
-
+  .background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
   .header {
-    &__background {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: auto;
-      height: 100%;
-      transform: translate(-50%, -50%);
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    max-width: 1280px;
 
-      animation: fadeInOut 5s ease-in-out infinite;
-      @keyframes fadeInOut {
-        0%,
-        100% {
-          opacity: 0.5;
-        }
-        2%,
-        98% {
-          opacity: 0.9;
-        }
-      }
-    }
     &Top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
+      width: 100%;
       &Left {
         &__logo {
           cursor: pointer;
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.02);
             transition-duration: 0.3s;
           }
           transition-duration: 0.3s;
@@ -61,6 +61,52 @@ body {
             }
           }
         }
+      }
+    }
+    &Bottom {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 100%;
+      height: 100%;
+      max-width: 624px;
+      max-height: 369px;
+      background-color: yellow;
+      display: inline-block; /* Сделать элемент блочным с возможностью задания ширины и высоты */
+      -webkit-clip-path: polygon(
+        10% 0,
+        100% 0,
+        100% 85%,
+        85% 100%,
+        0 100%,
+        0 10%
+      ); /* Для браузеров на основе WebKit */
+      clip-path: polygon(10% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 10%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &__title {
+        margin-left: 80px;
+        font-family: "Roboto";
+        font-size: 50px;
+        font-weight: bold;
+      }
+      &__text {
+        width: 120px;
+        margin-top: 30px;
+        margin-left: 80px;
+        text-align: center;
+        padding: 15px 50px;
+        font-weight: bold;
+        font-family: "Open Sans";
+        color: yellow;
+        background-color: black;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.02);
+          transition-duration: 0.3s;
+        }
+        transition-duration: 0.3s;
       }
     }
   }
@@ -88,4 +134,8 @@ body {
       opacity: 1; /* Конечное состояние: полностью прозрачный */
     }
   }
+}
+
+.testBody {
+  margin-top: 900px;
 }

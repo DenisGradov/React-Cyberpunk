@@ -32,12 +32,12 @@ function App() {
   return (
     <>
       <div className={styles.wrapper}>
+        <img
+          id="header-bg"
+          className={styles.background}
+          src={PHOTO_SRC["header-photos"][actualHeaderPhoto]}
+        />
         <div className={styles.header}>
-          <img
-            id="header-bg"
-            className={styles.header__background}
-            src={PHOTO_SRC["header-photos"][actualHeaderPhoto]}
-          />
           <div className={styles.headerTop}>
             <div className={styles.headerTopLeft}>
               <img
@@ -66,7 +66,14 @@ function App() {
               </ol>
             </div>
           </div>
+          <div className={styles.headerBottom}>
+            <h2 className={styles.headerBottom__title}>
+              Доступно на всех платформах
+            </h2>
+            <div className={styles.headerBottom__text}>Узнать больше</div>
+          </div>
         </div>
+        <div className={styles.testBody}>sss</div>
       </div>
     </>
   );
