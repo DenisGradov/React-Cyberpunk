@@ -16,6 +16,11 @@ function App() {
     "../public/images/header-photos/pc/2.jpg",
     "../public/images/header-photos/pc/3.jpg",
   ];
+  PHOTO_SRC["aboutCity"] = [
+    "../public/images/aboutCity/1.png",
+    "../public/images/aboutCity/2.jpg",
+    "../public/images/aboutCity/3.png",
+  ];
 
   const [actualHeaderPhoto, setActualHeaderPhoto] = useState(1);
   useEffect(() => {
@@ -83,6 +88,41 @@ function App() {
               </h2>
               <div className={styles.topBlockBottom__text}>Узнать больше</div>
             </div>
+          </div>
+        </div>
+        <div className={styles.aboutCity}>
+          <div className={styles.aboutCityTextbox}>
+            <div className={styles.aboutCityTextbox__title}>
+              Найт-Сити изменит тебя навсегда!
+            </div>
+            <div className={styles.aboutCityTextbox__text}>
+              <span className={styles.aboutCityTextbox__textBlue}>
+                Cyberpunk 2077
+              </span>{" "}
+              — приключенческая ролевая игра, действие которой происходит в
+              мегаполисе Найт-Сити, где власть, роскошь и модификации тела
+              ценятся выше всего. Ты играешь за V, наёмника в поисках
+              устройства, позволяющего обрести бессмертие. Ты сможешь менять
+              киберимпланты, навыки и стиль игры своего персонажа, исследуя
+              открытый мир, где твои поступки влияют на ход сюжета и всё, что
+              тебя окружает.
+            </div>
+          </div>
+          <div className={styles.aboutCityPhotobox}>
+            <div className={styles.aboutCityPhotoboxTop}>
+              <img
+                className={styles.aboutCityPhotoboxTop__img}
+                src={PHOTO_SRC["aboutCity"][0]}
+              />
+              <img
+                className={styles.aboutCityPhotoboxTop__img}
+                src={PHOTO_SRC["aboutCity"][2]}
+              />
+            </div>
+            <img
+              className={styles.aboutCityPhotobox__img}
+              src={PHOTO_SRC["aboutCity"][1]}
+            />
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      max-width: 900px;
+      max-width: 952px;
       width: 100%;
       height: 100%;
       padding: 20px 0;
@@ -128,6 +128,67 @@
         transition-duration: 0.3s;
         @media (max-width: 497px) {
           margin-left: 0px;
+        }
+      }
+    }
+  }
+  .aboutCity {
+    max-width: 952px;
+    margin: 0 auto;
+    &Textbox {
+      @media (max-width: 952px) {
+        margin-left: 10px;
+      }
+      &__title {
+        margin-top: 70px;
+        font-family: "Open Sans";
+        font-size: 62px;
+        max-width: 620px;
+        width: 100%;
+        font-weight: bold;
+      }
+      &__text {
+        margin-top: 25px;
+        font-size: 18px;
+        font-family: "Roboto";
+        color: #777777;
+        line-height: 34px;
+        max-width: 788px;
+        &Blue {
+          color: #52bedc;
+        }
+      }
+    }
+    &Photobox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &Top {
+        margin: 70px 0px 32px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 952px) {
+          margin: 50px 0px 12px 0px;
+        }
+        &__img {
+          width: 46%;
+          display: inline-block;
+          @media (max-width: 952px) {
+            margin: 15px 0;
+            width: 100vw;
+          }
+        }
+        @media (max-width: 952px) {
+        }
+      }
+      &__img {
+        max-width: 952px;
+        width: 95%;
+        display: inline-block;
+        @media (max-width: 952px) {
+          width: 100vw;
         }
       }
     }
