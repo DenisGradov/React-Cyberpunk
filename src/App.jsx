@@ -32,48 +32,59 @@ function App() {
   return (
     <>
       <div className={styles.wrapper}>
-        <img
-          id="header-bg"
-          className={styles.background}
-          src={PHOTO_SRC["header-photos"][actualHeaderPhoto]}
-        />
-        <div className={styles.header}>
-          <div className={styles.headerTop}>
-            <div className={styles.headerTopLeft}>
+        <div className={styles.topBlock}>
+          <img
+            id="header-bg"
+            className={styles.topBlockBg}
+            src={PHOTO_SRC["header-photos"][actualHeaderPhoto]}
+          />
+          <div className={styles.topBlockContent}>
+            <div className={styles.topBlockContentTop}>
               <img
                 src={PHOTO_SRC["logo"]}
-                className={styles.headerTopLeft__logo}
+                className={styles.topBlockContentTop__logo}
               />
-            </div>
-
-            <div className={styles.headerTopRight}>
-              <ol className={styles.headerTopRightMediaList}>
-                <a href="#" className={styles.headerTopRightMediaList__media}>
+              <ol className={styles.topBlockContentTopMediaList}>
+                <a
+                  href="#"
+                  className={styles.topBlockContentTopMediaList__media}
+                >
                   <img src={PHOTO_SRC["fb"]} />
                 </a>
-                <a href="#" className={styles.headerTopRightMediaList__media}>
+                <a
+                  href="#"
+                  className={styles.topBlockContentTopMediaList__media}
+                >
                   <img src={PHOTO_SRC["inst"]} />
                 </a>
-                <a href="#" className={styles.headerTopRightMediaList__media}>
+                <a
+                  href="#"
+                  className={styles.topBlockContentTopMediaList__media}
+                >
                   <img src={PHOTO_SRC["twich"]} />
                 </a>
-                <a href="#" className={styles.headerTopRightMediaList__media}>
+                <a
+                  href="#"
+                  className={styles.topBlockContentTopMediaList__media}
+                >
                   <img src={PHOTO_SRC["twitter"]} />
                 </a>
-                <a href="#" className={styles.headerTopRightMediaList__media}>
+                <a
+                  href="#"
+                  className={styles.topBlockContentTopMediaList__media}
+                >
                   <img src={PHOTO_SRC["youtube"]} />
                 </a>
               </ol>
             </div>
-          </div>
-          <div className={styles.headerBottom}>
-            <h2 className={styles.headerBottom__title}>
-              Доступно на всех платформах
-            </h2>
-            <div className={styles.headerBottom__text}>Узнать больше</div>
+            <div className={styles.topBlockBottom}>
+              <h2 className={styles.topBlockBottom__title}>
+                Доступно на всех платформах
+              </h2>
+              <div className={styles.topBlockBottom__text}>Узнать больше</div>
+            </div>
           </div>
         </div>
-        <div className={styles.testBody}>sss</div>
       </div>
     </>
   );
