@@ -1,0 +1,782 @@
+/*Шрифт Archangelsk шрифт Roboto в html документе в теге link*/
+
+@font-face {
+  font-family: "Archangelsk";
+  src: url("/fonts/Archangelsk.eot");
+  src: local("Archangelsk"),
+    url("Archangelsk.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Archangelsk.woff") format("woff"),
+    url("/fonts/Archangelsk.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Общие стили шрифтов,кнопок и ul элемментов но тут не все,так как некоторые параметры индивидуальны для нкоторых элементов*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archangelsk";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+b {
+  color: #52bedc;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+button {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/*Первая картинка на странице за Header*/
+.intro {
+  background: url(./image/intro.jpg) center no-repeat;
+  width: 100%;
+  height: 1000px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/*Общий container но оно меняется в зависимосте от ширины в media.css*/
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*Блок Header*/
+.header_content {
+  position: absolute;
+  inset: 0;
+  height: 1000px;
+}
+
+.banner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 624px;
+  height: 369px;
+  background-color: #f8f200;
+  clip-path: polygon(7.8% 0, 100% 0, 100% 86.5%, 92.2% 100%, 0 100%, 0 13.5%);
+}
+
+.banner_content {
+  padding: 70px 70px 70px 70px;
+}
+
+.banner_title {
+  margin-top: 0;
+  margin-bottom: 12.5px;
+}
+
+.banner_button {
+  width: 272px;
+  height: 78px;
+  cursor: pointer;
+  margin-top: 12.5px;
+  color: #f8f200;
+  background-color: #000000;
+  transition: 0.3s ease-out;
+}
+
+.banner_button:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.list_item {
+  padding-left: 40px;
+}
+
+.list_img {
+  transition: 0.2s ease-in;
+}
+
+.list_last_child {
+  padding-left: 0;
+}
+
+/*При навидении на иконки в меню они увеличивоются на 1.2*/
+.list_img:hover {
+  transform: scale(1.2);
+}
+
+/*Общий блок Description*/
+.description_text {
+  margin-top: 70px;
+}
+
+.description_title {
+  margin-bottom: 25px;
+}
+.p_description {
+  max-width: 952px;
+  margin-top: 25px;
+}
+
+/*Картинки в этом блоке уменшаются в завсисмосте от ширины экрана*/
+.description_img img {
+  max-width: 920px;
+  height: auto;
+}
+
+/*
+.img_block_1 img{
+    width: 460px;
+    height: auto;
+}
+*/
+
+/*Картинки позицонированы с помощью flexbox но эти значения меняются в замистимости от ширины экрана*/
+.description_img {
+  display: flex;
+  margin-top: 60px;
+  column-gap: 32px;
+}
+
+/*Этот блок позицанирует первые две картинки поменьше а большая картинка подчиняется общему блоку .description_img*/
+.img_block_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/*Общий блок draw*/
+.draw {
+  margin-top: 70px;
+  background-color: #000000;
+  min-height: 880px;
+}
+
+/*Желтая картинка "Акция"*/
+.promotion {
+  margin-top: 15px;
+}
+
+/*Картинка с частицами в верху draw блока*/
+.draw_layer_top {
+  width: 100%;
+  height: 70px;
+}
+
+/*Весь контент который находится в container*/
+.draw_content {
+  position: relative;
+}
+
+.draw_block {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Загаловок*/
+.draw_title {
+  position: absolute;
+  top: 0;
+  left: 132px;
+  margin: 70px 0 40px 32px;
+  color: #ffffff;
+}
+
+/*Параграф*/
+.p_draw {
+  max-width: 952px;
+  color: #ffffff;
+}
+
+/*Картинки с приставками*/
+.draw_console {
+  position: absolute;
+  top: 257px;
+  right: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+/*Эти значения одинаковы для двух блоков position: relative для того что бы осталные элементы были в этом блоке */
+.playstation_5_block,
+.xbox_sx_block {
+  position: relative;
+  max-width: 460px;
+  height: 456px;
+}
+
+/*Общее параматры фоновой картинки желтая и синяя картинка за приставками */
+.playststion_5_layer,
+.xbox_sx_layer {
+  width: 460px;
+  height: 456px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*Фоновые картинки за желтая и синяя картинка за приставками*/
+.playststion_5_layer {
+  background-image: url(/image/playstation_layer.png);
+}
+
+.xbox_sx_layer {
+  background-image: url(/image/xbox_sx_layer.png);
+}
+
+/*Картинки приставок и общее значение*/
+.playstation_5_img,
+.xbox_sx_img {
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+/*Xbox смещен немного в право так как было на макете*/
+.xbox_sx_block {
+  left: 145px;
+  z-index: 1;
+}
+
+/*Форма заполнения*/
+.draw_form {
+  max-width: 460px;
+  height: auto;
+  margin-top: 120px;
+}
+
+/*Общие блоки заполнения Имени и Email*/
+.form_group {
+  position: relative;
+  margin-top: 35px;
+}
+
+/*Общие input-ы заполнения Имени и Email*/
+.form_input {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #777777;
+  outline: none;
+  padding-top: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+}
+
+/*Общие тексты кторый находятся в input заполнения Имени и Email*/
+.form_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/*Когда input в фокусе а если еще проще то когда вы кликаете по input то текст смещается вверх а placeholder-shown не поволяет ему вернутся назад когда в input что-то написано*/
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label {
+  top: -18px;
+}
+
+/*Значения блока отправки скриншота*/
+.sende {
+  max-width: 460px;
+  height: 120px;
+  border: 2px dashed #777777;
+  margin-top: 35px;
+}
+
+/*Стандартная кнопка input отправки файла скрыта*/
+.sende_input {
+  display: none;
+}
+
+/*Текст блока sende позицонирование в flexbox*/
+.sende_label {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 6;
+  color: #ffffff;
+}
+
+/*Текст который находится под основным какие типы скриншотов можно отправить*/
+.p_label {
+  position: relative;
+  top: -35px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+/*Кнорка формы запрлнения*/
+.form_button {
+  margin-top: 35px;
+}
+
+.button_submit {
+  background-color: #f8f200;
+  width: 192px;
+  height: 59px;
+  font-size: 18px;
+}
+
+/*Checkbox проще галочка соглошения*/
+/*Стандартный Checkbox скрыт так как он у нас кастомный*/
+.checkbox_input {
+  display: none;
+}
+
+/*Параметры кастомного Checkbox*/
+.castum_checkbox {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 1px solid #777777;
+  margin-top: 10px;
+  transition: 0.3s ease-in;
+}
+
+/*Текст Checkbox*/
+.checkbox_text {
+  position: relative;
+  bottom: 3px;
+  margin-left: 3px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/*Псевдо элемент Checkbox а если проще галочка в квадрате*/
+.castum_checkbox::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-image: url(/image/check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1px;
+  transition: 0.3s ease-in;
+}
+
+/*Парметр который включает и отключает галочку когда scale(0) в .castum_checkbox::before оно отключено а когда здесь scale(1) оно включно */
+.checkbox_input:checked + .castum_checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*Частицы внизу блка draw но оно находится в hp_monitor как в макете*/
+.draw_layer_bottom {
+  width: 100%;
+  height: 70px;
+}
+
+/*Общий блок hp_monitor*/
+.hp_monitor {
+  background-color: #f8f200;
+}
+
+/*Коннтент hp_monitor в container*/
+.hp_monitor_content {
+  margin-top: 70px;
+}
+
+/*Общий блок который позицанирует элементы*/
+.hp_block {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+/*Общий блок .hp_monitor_block и .hp_x_cyberpunk*/
+.hp_monitor_block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/*Прзицанирование картинок бренда hp и лого cyberpunk*/
+.hp_x_cyberpunk {
+  display: flex;
+  justify-content: center;
+  gap: 29px;
+}
+
+/*Общий блок с текстом в hp_block*/
+.hp_monitor_text {
+  max-width: 624px;
+}
+
+/*Загаловок*/
+.hp_title {
+  margin: 0;
+}
+
+/*Параграф*/
+.p_hp {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+/*Список после параграфа*/
+.hp_list {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+/*Списки */
+.hp_item {
+  padding-bottom: 25px;
+}
+
+.hp_item:last-child {
+  padding-bottom: 0;
+}
+
+/*Иконки возле списка и их позецонирование*/
+.hp_icon {
+  position: absolute;
+}
+
+.hp_icon {
+  left: 5px;
+  width: 29px;
+  height: 29px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*Псевдо элементы .hp_icon и индивидуальное позецанировние*/
+.icon_paint {
+  top: 0;
+  background-image: url(/image/paints.svg);
+}
+
+.icon_star {
+  top: 40px;
+  background-image: url(/image/star.svg);
+}
+
+.icon_smooth {
+  top: 82px;
+  background-image: url(/image/smooth.svg);
+}
+
+/*Кнопка .hp_monitor_text*/
+.hp_button {
+  width: 194px;
+  height: 59px;
+  margin-bottom: 80px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  background-color: #000000;
+  color: #f8f200;
+  font-size: 18px;
+}
+
+.hp_button:hover {
+  transform: scale(1.2);
+}
+
+/*Общий блок buy_game*/
+.buy_game {
+  background-color: #000000;
+}
+
+/*Кастомный контейнер для того что бы все было как в макете за границами основого контейнера*/
+.castum_container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/*Общий блок с контентом buy_game*/
+.buy_game_content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+/*Картинка*/
+.buy_game_img {
+  background: url(/image/buy_img.jpg) no-repeat;
+  width: 944px;
+  height: auto;
+  background-size: cover;
+}
+
+/*Загаловок*/
+.buy_game_title {
+  color: #ffffff;
+  max-width: 624px;
+  margin-top: 77px;
+  margin-bottom: 0;
+}
+
+/*Блок с листом*/
+.block_list {
+  margin-top: 27px;
+}
+
+/*Загаловок листа*/
+.list_title {
+  margin: 0;
+  color: #52bedc;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/*Лист*/
+.buy_list {
+  position: relative;
+  margin-top: 16px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.buy_item {
+  padding-bottom: 30px;
+}
+
+.buy_item:last-child {
+  padding-bottom: 0;
+}
+
+/*Иконка в начале текста*/
+.buy_icon {
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*Иконка в начале текста*/
+.case_with_code {
+  background-image: url(/image/case_with_code.svg);
+}
+
+/*Иконка в начале текста*/
+.case_with_code_2 {
+  background-image: url(/image/case_with_code.svg);
+}
+
+/*Иконка в начале текста*/
+.directory_of_information {
+  background-image: url(/image/directory_of_information.svg);
+}
+
+/*Блок с платформами*/
+.platform {
+  max-width: 319px;
+  height: auto;
+  margin-top: 75px;
+}
+
+/*Загаловок*/
+.platform_title {
+  margin: 0;
+  color: #52bedc;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/*Блок с картинками платформы*/
+.platform_logo_block {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 84px;
+  row-gap: 48px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/*Общее значения картинок*/
+.platform_img {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pc {
+  width: 56px;
+  height: 32px;
+  background-image: url(/image/PC.svg);
+}
+
+.xbox {
+  width: 178px;
+  height: 36px;
+  background-image: url(/image/xbox_one_icon.svg);
+}
+
+.stadia {
+  width: 58px;
+  height: 50px;
+  background-image: url(/image/stadia_logo.svg);
+}
+
+.ps4 {
+  width: 168px;
+  height: 35.19px;
+  background-image: url(/image/playstation_ps4_logo.svg);
+}
+
+/*Блок с footer*/
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+}
+
+/*Блок с лого игры и компании*/
+.footer_logo {
+  display: flex;
+  gap: 32px;
+}
+
+.cyberpunk_logo_footer {
+  width: 295px;
+  height: 73px;
+}
+
+.cd_project {
+  width: 172px;
+  height: 74px;
+}
+
+/*Блок с ссылками*/
+.footer_link {
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+}
+
+.footer_list {
+  display: flex;
+}
+
+.footer_item {
+  padding-right: 32px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer_item:last-child {
+  padding-right: 0;
+}
+
+/*Черная палоска в конце под footer*/
+.block_end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+}
+
+.p_end {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+}

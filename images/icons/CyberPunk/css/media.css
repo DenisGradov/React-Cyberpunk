@@ -1,0 +1,646 @@
+/*Медиа запросы для адаптива что бы было все понятно хоть немного я все рапределил по основным блокам лучшего варианта я не придумал так как многие варианты были кашей*/
+@media screen and (max-width:1280px){
+
+    .container{
+        padding: 0 20px;
+    }
+
+/*Блок description*/
+    .description_img{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .img_block_1{
+        flex-direction: row;
+    }
+
+    .img_3{
+        width: 952px;
+        height: auto;
+    }
+/*Блок description*/
+
+}
+
+@media screen and (max-width:1256px){
+/*Блок draw*/
+    .draw{
+        height: 1218px;
+    }
+
+    .draw_console{
+        flex-direction: column;
+        right: 80px;
+    }
+
+    .xbox_sx_block{
+        left: 0;
+    }
+
+    .playstation_5_block{
+        top: -55px;
+    }
+/*Блок draw*/
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        max-width: 952px;
+        margin: 0 36px;
+        padding: 0;
+    }
+/*Блок header*/
+    .header_content{
+        height: 1000px;
+    }
+
+    .intro{
+        background: url(/image/intro_1024.jpg)center no-repeat;
+        width: 100%;
+        height: 1000px;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    /*Блок header*/
+/*_______________________________*/
+    /*Блок description*/
+    .description_text{
+        max-width: 800px
+    }
+
+    .description_title{
+        max-width: 620px;
+    }
+
+    .description_img img{
+        width: 100%;
+        max-height: 424px;
+        overflow: hidden;
+    }
+
+    .description_img{
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .img_block_1{
+        flex-direction: row;
+    }
+    /*Блок description*/
+/*_______________________________*/
+    /*Блок draw*/
+    .draw{
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .draw_block{
+        display: flex;
+        flex-direction: row;
+    }
+    .draw_text{
+        max-width: 460px;
+    }
+
+    .draw_title{
+        position: static;
+        margin: 15px 0 25px 0;
+        max-width: 460px;
+
+    }
+
+    .p_draw{
+        max-width: 460px;
+    }
+
+    .draw_console{
+        position: static;
+        flex-direction: column;
+        margin-top: -50px;
+        margin-left: 35px;
+    }
+
+    .xbox_sx_block{
+        left: 0;
+    }
+
+    .playstation_5_block{
+        top: -55px;
+    }
+    /*Блок draw*/
+/*_______________________________*/
+    /*Блок hp_monitor*/
+    .hp_monitor_block{
+        margin-top: 50px;
+    }
+
+
+    .monitor_img{
+        max-width: 460px;
+        height: 317px;
+    }
+
+    .hp_x_cyberpunk{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hp_x_cyberpunk{
+        gap:0;
+    }
+
+    .hp_monitor_text{
+        margin-top: 10px;
+    }
+    /*Блок hp_monitor*/
+/*_______________________________*/
+    /*Блок buy_game*/
+    .buy_game_img{
+        width: 332px;
+    }
+
+    .buy_game_text{
+        padding-right: 20px;
+    }
+/*Блок buy_game*/
+}
+
+@media screen and (max-width: 988px){
+    .footer_block{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px){
+/*Блок hp_monitor*/
+    .monitor_img{
+        max-width: 325px;
+        height: 221px;
+    }
+
+    .hp_title{
+        font-size: 50px;
+    }
+
+    .p_hp,.hp_list{
+        font-size: 16px;
+    }
+
+    .hp_icon{
+        width: 21px;
+    }
+
+    .hp_x_cyberpunk{
+        gap: 25px;
+    }
+/*Блок hp_monitor*/
+
+}
+
+@media screen and (max-width: 845px){
+/*Блок draw*/
+    .promotion{
+        width: 100px;
+        height: 100px;
+    }
+    .xbox_sx_block,
+    .xbox_sx_layer,
+    .playstation_5_block,
+    .playststion_5_layer{
+        width: 345px;
+        height: 350px;
+    }
+
+    .xbox_sx_img,
+    .playstation_5_img{
+        width: 220px;
+        height: 260px;
+    }
+/*Блок draw*/
+}
+
+@media screen and (max-width: 768px){
+/*Блок banner*/
+    .banner{
+        width: 100%;
+    }
+
+    .banner_title{
+        font-size: 50px;
+    }
+
+    .banner_button{
+        transition: none;
+    }
+
+    .banner_button:hover{
+        transform: none;
+    }
+/*Блок banner*/
+    .menu{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .list_img{
+        transition: none;
+    }
+    .list_img:hover{
+        transform: none;
+    }
+/*Блок draw*/
+    .draw_block{
+        flex-direction: column-reverse;
+    }
+
+    .draw_title{
+        text-align: center
+    }
+
+    .draw_text,.draw_title, .p_draw,.draw_form,.sende{
+        max-width: 100%;
+    }
+
+    .draw_console{
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .xbox_sx_block,
+    .xbox_sx_layer,
+    .playstation_5_block,
+    .playststion_5_layer{
+        width: 245px;
+        height: 245px;
+    }
+
+    .xbox_sx_img,
+    .playstation_5_img{
+        width: 165px;
+        height: 180px;
+    }
+    .playstation_5_block{
+        top: 0;
+    }
+    /*Блок draw*/
+/*_______________________________*/
+    /*Блок hp_monitor*/
+    .hp_block{
+        flex-direction: column;
+    }
+
+    .hp_monitor_block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hp_x_cyberpunk{
+        flex-direction: row;
+    }
+
+    .cyberpunk_logo{
+        width: 175px;
+        height: 44px;
+    }
+
+    .hp_button{
+        transition: none;
+    }
+
+    .hp_button:hover{
+        transform: none;
+    }
+    /*Блок hp_monitor*/
+/*_______________________________*/
+    /*Блок buy_game*/
+    .buy_game_title{
+        font-size: 50px;
+    }
+
+    .buy_game_content{
+        flex-direction: column;
+    }
+
+    .buy_game_img{
+        width: 100%;
+        height: auto;
+    }
+
+    .buy_game_text{
+        padding-left: 12px;
+    }
+
+    .buy_game_img{
+    width: 100%;
+    height: 400px;
+
+    }
+    /*Блок buy_game*/
+/*_______________________________*/
+    /*Блок banner*/
+    .banner_content{
+        padding: 40px 70px 70px 70px;
+    }
+/*Блок banner*/
+}
+
+@media screen and (max-width: 533px){
+    .container{
+        padding: 0 12px;
+    }
+/*Блок banner*/
+    .banner{
+        height: auto;
+    }
+
+    .banner_content{
+        padding: 30px 12px 30px 12px;
+    }
+
+    .banner_title{
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .banner_button{
+        width: 100%;
+        font-size: 20px;
+    }
+/*Блок banner*/
+    .list_item{
+        padding-left: 30px;
+    }
+
+    .list_last_child{
+        padding: 0;
+    }
+
+    .list_img{
+        width: 100%;
+        height: auto;
+    }
+/*Блок description*/
+    .description_title {
+        margin-bottom: 0;
+        font-size: 30px;
+        line-height: inherit;
+
+    }
+    /*Блок description*/
+/*_______________________________*/
+    /*Блок draw*/
+    .draw_title{
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .promotion{
+        width: 62px;
+        height: 62px;
+    }
+
+    .p_draw,b{
+        font-size: 16px;
+    }
+
+    .xbox_sx_block,
+    .xbox_sx_layer,
+    .playstation_5_block,
+    .playststion_5_layer{
+        width: 132px;
+        height: 130px;
+    }
+
+    .xbox_sx_img,
+    .playstation_5_img{
+        width: 80px;
+        height: 100px;
+    }
+    /*Блок draw*/
+/*_______________________________*/
+    /*Блок hp_monitor*/
+    .hp_x_cyberpunk{
+        gap: 5px;
+    }
+
+    .hp_logo{
+        width: 43px;
+        height: 44px;
+    }
+
+    .logo_x_logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .monitor_img{
+        width: 296px;
+        height: 204px;
+    }
+    /*Блок hp_monitor*/
+/*_______________________________*/
+    /*Блок footer*/
+    .footer_block{
+        margin-top: 25px;
+    }
+
+    .footer_logo{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footer_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        margin-top: 37px;
+    }
+
+    .footer_item{
+        padding: 0;
+    }
+/*Блок footer*/
+}
+
+@media screen and (max-width:480px){
+    .container{
+        margin: 0;
+        padding: 0 12px;
+    }
+/*Блок draw*/
+    .img_block_1{
+        flex-direction: column;
+    }
+    /*Блок draw*/
+/*_______________________________*/
+    /*Блок buy_game*/
+    .buy_game_title{
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 12px;
+    }
+
+    .buy_list{
+        font-size: 16px;
+    }
+
+    .platform_logo_block{
+        column-gap: 54px;
+        row-gap: 50px;
+    }
+
+    .platform_title,
+    .list_title{
+        font-size: 20px;
+    }
+
+    .buy_icon{
+        width: 18px;
+    }
+
+    .buy_item{
+        padding-bottom: 18px;
+    }
+
+    .platform{
+        margin-top: 24px;
+    }
+    /*Блок buy_game*/
+/*_______________________________*/
+    /*Блок footer*/
+    .cyberpunk_logo_footer {
+        width: 200px;
+        height: 50px;
+    }
+
+    .cd_project {
+        width: 116px;
+        height: 50px;
+    }
+
+    .footer_item{
+        font-size: 16px;
+    }
+/*Блок footer*/
+}
+
+@media screen and (max-width: 320px){
+    .logo img{
+        width: 200px;
+        height: 50px;
+    }
+
+    .list{
+        margin-top: 7px;
+    }
+/*Блок banner*/
+    .banner{
+        bottom: 239px;
+    }
+
+    .banner_title{
+        line-height: 30px;
+    }
+
+    .banner_button{
+        margin: 0 28px;
+        width: 240px;
+        height: 59px;
+    }
+    /*Блок banner*/
+/*_______________________________*/
+    /*Блок header*/
+    .intro{
+        background: url(/image/intro_320.jpg)center no-repeat;
+        width: 100%;
+        height: 713px;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    /*Блок header*/
+/*_______________________________*/
+    /*Блок description*/
+    .description_text{
+        margin-top: 103px;
+    }
+
+
+    .p_description{
+        margin-top:18px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .p_description>b{
+        font-size: 16px;
+    }
+
+    .description_img img{
+        width: 320px;
+        height: 196px;
+        overflow: inherit;
+    }
+
+    .img_3{
+        height: 424px !important;
+    }
+    /*Блок description*/
+/*_______________________________*/
+    /*Блок draw*/
+    .draw{
+        margin-top: 70px;
+    }
+
+    .draw_console{
+        margin-top: -20px;
+    }
+
+    .draw_title{
+        margin-bottom: 0;
+    }
+
+    .p_draw{
+        margin-top: 5px;
+        line-height: 30px;
+    }
+
+    .draw_form{
+        margin-top: 64px;
+    }
+    /*Блок draw*/
+/*_______________________________*/
+    /*Блок hp_monitor*/
+    .hp_monitor_content{
+        margin-top: 80px;
+    }
+
+    .hp_title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .p_hp{
+        margin-top: 20px;
+        line-height: 32px;
+    }
+
+    .hp_item {
+        padding-bottom: 18px;
+    }
+    /*Блок hp_monitor*/
+/*_______________________________*/
+    /*Блок buy_game*/
+    .buy_game_img {
+        width: 100%;
+        height: 185px;
+    }
+/*Блок buy_game*/
+}

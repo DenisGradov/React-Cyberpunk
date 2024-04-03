@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberPunk</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="icon" href="./image/favicon_cyberpunk.png" type="image/png" />
+    <!--Шрифт Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Блок header-->
+    <header class="header">
+      <!--Первая картинка с гг на фоне header и banner-->
+      <div class="intro"></div>
+      <div class="container">
+        <!--Блок header в котором основной коннтент этому блоку я добавил псевдоэлемент container что бы он был в container так как в css он в position: absolute; и без этого псевдоэлемента контент выходит за рамки и прижимается к краям экрана-->
+        <div class="header_content container">
+          <!--Блок banner тот жеотый квадрат-->
+          <div class="banner">
+            <div class="banner_content">
+              <h2 class="banner_title">Доступно на всех платформах</h2>
+              <button class="banner_button">Узнать больше</button>
+            </div>
+          </div>
+          <!--Меню с соц сетями и logo-->
+          <nav class="menu">
+            <!--Лого-->
+            <div class="logo">
+              <a href="#">
+                <img
+                  src="./image/cyberounk_logo.png"
+                  alt="CyberPunk logo"
+                  class="logo_img"
+                />
+              </a>
+            </div>
+            <!--Каждому дочерниму элементу я добавил классы что бы в случае чего в могли управлять ими только у одного элемента есть псевдокласс для того что бы убрать padding та как в css last-child не сработал -->
+            <ul class="list">
+              <!--Вот этот элеммент-->
+              <li class="list_item list_last_child">
+                <a class="list_link" href="#">
+                  <img
+                    src="./image/youtube-logo.svg"
+                    alt="YouTube"
+                    class="list_img"
+                  />
+                </a>
+              </li>
+              <li class="list_item">
+                <a class="list_link" href="#">
+                  <img src="./image/vk-logo.svg" alt="Vk" class="list_img" />
+                </a>
+              </li>
+              <li class="list_item">
+                <a class="list_link" href="#">
+                  <img
+                    src="./image/facebook-logo.svg"
+                    alt="facebook"
+                    class="list_img"
+                  />
+                </a>
+              </li>
+              <li class="list_item">
+                <a class="list_link" href="#">
+                  <img
+                    src="./image/twitter-logo.svg"
+                    alt="twitter"
+                    class="list_img"
+                  />
+                </a>
+              </li>
+              <li class="list_item">
+                <a class="list_link" href="#">
+                  <img
+                    src="./image/twitch-logo.svg"
+                    alt="twitch"
+                    class="list_img"
+                  />
+                </a>
+              </li>
+              <li class="list_item">
+                <a class="list_link" href="#">
+                  <img
+                    src="./image/instagram-logo.svg"
+                    alt="instagram"
+                    class="list_img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Коннтент странницы-->
+    <main class="main_content">
+      <!--общий блок description-->
+      <section class="description">
+        <div class="container">
+          <!--Блок с коннтентом description-->
+          <div class="description_content">
+            <!--Блок с текстом в description-->
+            <div class="description_text">
+              <h1 class="description_title">
+                Найт-Сити изменит тебя навсегда!
+              </h1>
+              <p class="p_description">
+                <b>Cyberpunk 2077</b> — приключенческая ролевая игра, действие
+                которой происходит в мегаполисе Найт-Сити, где власть, роскошь и
+                модификации тела ценятся выше всего. Ты играешь за V, наёмника в
+                поисках устройства, позволяющего обрести бессмертие. Ты сможешь
+                менять киберимпланты, навыки и стиль игры своего персонажа,
+                исследуя открытый мир, где твои поступки влияют на ход сюжета и
+                всё, что тебя окружает.
+              </p>
+            </div>
+          </div>
+          <!--Картинки в блоке description две картинки в одном общем блоке для того что бы при познцонировании flexbox они рддовались манипуляциям и было так как в макете а одна картинка которая побльше уже в одном общем блоке description_img-->
+          <div class="description_img">
+            <!--Две маленькие картинки-->
+            <div class="img_block_1">
+              <img src="./image/section-img-1.png" alt="Image" class="img_1" />
+              <img src="./image/section-img-2.png" alt="Image" class="img_2" />
+            </div>
+            <!--Одна большая-->
+            <img src="./image/section-img-3.png" alt="Image" class="img_3" />
+          </div>
+        </div>
+      </section>
+      <!--Общий блок draw-->
+      <section class="draw">
+        <!--Картинка с частицами в верху блока draw-->
+        <img
+          src="./image/draw_layer_top.png"
+          alt="Layer"
+          class="draw_layer_top"
+        />
+        <div class="container">
+          <!--Общий блок с коннтентом-->
+          <div class="draw_content">
+            <!--Картинка с акцией-->
+            <img
+              src="./image/promotion.svg"
+              alt="Promotion"
+              class="promotion"
+            />
+            <!--Единный draw_block в котором весь коннтент позицанирован в flexbox-->
+            <div class="draw_block">
+              <!--Единный блок с текстом и с формой draw_text сделал так потому что так удобнее позицонировать в flexbox и коннтент получается резиновым и форма оказывается под текстом как в макете при изминении flexbox в блоке draw_text то оно будет иметь влияние только на draw_text и draw_form-->
+              <!--Блок с текстом draw-->
+              <div class="draw_text">
+                <h2 class="draw_title">Играй и выигрывай!</h2>
+                <p class="p_draw">
+                  Играй в <b>Cyberpunk 2077</b> и получи возможность выиграть
+                  консоль <b>Xbox Series X</b> или
+                  <b>Sony PlayStation 5!</b> Заполни форму ниже и приложи
+                  скриншот о покупке игры. Итоги розыгрыша будут подведены 1
+                  февраля. Удачи! ;)
+                </p>
+                <!--Форма заполнения-->
+                <form action="#" method="post" class="draw_form">
+                  <div class="form_group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="user_name"
+                      placeholder=" "
+                      required
+                      class="form_input"
+                    />
+                    <label for="name" class="form_label">Как тебя зовут?</label>
+                  </div>
+                  <div class="form_group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="user_email"
+                      placeholder=" "
+                      required
+                      class="form_input"
+                    />
+                    <label for="email" class="form_label">Твой е-mail</label>
+                  </div>
+                  <div class="sende">
+                    <input
+                      type="file"
+                      id="file"
+                      name="user_file"
+                      accept="image/*"
+                      class="sende_input"
+                    />
+                    <label for="file" class="sende_label"
+                      >Прикрепить скриншот</label
+                    >
+                    <label for="file" class="p_label">.png / .jpg / .pdf</label>
+                  </div>
+                  <div class="form_button">
+                    <button type="submit" class="button_submit">
+                      Отправить
+                    </button>
+                  </div>
+                  <label for="checkbox" class="checkbox_label">
+                    <input
+                      type="checkbox"
+                      id="checkbox"
+                      name="user_checkbox"
+                      required
+                      class="checkbox_input"
+                    />
+                    <span class="castum_checkbox"></span>
+                    <span class="checkbox_text"
+                      >Согласен на обработку персональных данных</span
+                    >
+                  </label>
+                </form>
+              </div>
+              <!--Общий блок с консолями который позицанирует элемменты-->
+              <div class="draw_console">
+                <!--Единый блок с картинками-->
+                <div class="xbox_sx_block">
+                  <!--Фон консоли-->
+                  <div class="xbox_sx_layer">
+                    <!--Крнсоль-->
+                    <img
+                      src="./image/xbox_sx.png"
+                      alt="Xbox SX"
+                      class="xbox_sx_img"
+                    />
+                  </div>
+                </div>
+                <!--Единый блок с картинками-->
+                <div class="playstation_5_block">
+                  <!--Фон консоли-->
+                  <div class="playststion_5_layer">
+                    <!--Крнсоль-->
+                    <img
+                      src="./image/playstation_5.png"
+                      alt="Playstation 5"
+                      class="playstation_5_img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Общий блок hp_monitor-->
+      <section class="hp_monitor">
+        <!--Частицы внизу блка draw но оно находится в hp_monitor как в макете-->
+        <img
+          src="./image/draw_layer_bottom.png"
+          alt="Layer"
+          class="draw_layer_bottom"
+        />
+        <div class="container">
+          <!--Бок с коннтентом-->
+          <div class="hp_monitor_content">
+            <!--Общий блок с элимментами который упровляет flexbox-->
+            <div class="hp_block">
+              <!--Общий блок с картинкой брендом hp и logo-->
+              <div class="hp_monitor_block">
+                <img
+                  src="./image/hp-image.png"
+                  alt="hp monitor"
+                  class="monitor_img"
+                />
+                <!--Общий блок hp и logo-->
+                <div class="hp_x_cyberpunk">
+                  <img
+                    src="./image/hp_logo.svg"
+                    alt="hp logo"
+                    width="80px"
+                    height="80px"
+                    class="hp_logo"
+                  />
+                  <img
+                    src="./image/logo_x_logo.svg"
+                    alt="X"
+                    width="90px"
+                    height="90px"
+                    class="logo_x_logo"
+                  />
+                  <img
+                    src="./image/cyberounk_logo.png"
+                    alt="CyberPunk logo"
+                    width="319px"
+                    height="80px"
+                    class="cyberpunk_logo"
+                  />
+                </div>
+              </div>
+              <!--Общий блок с текстом-->
+              <div class="hp_monitor_text">
+                <h2 class="hp_title">Полное погружение вместе с HP</h2>
+                <p class="p_hp">
+                  Погрузись в современные экшен-игры с реалистичным изображением
+                  с помощью монитора с диагональю 23,8 дюйма, созданном для
+                  отображения максимально насыщенных цветов. Успевай реагировать
+                  на любые события с временем отклика 1 мс и частотой в 144 Гц!
+                </p>
+                <!--Общий блок с списком над каждым спском есть блочный элимент div которые и есть картинки но они добпавлены уже в css-->
+                <ul class="hp_list">
+                  <!--Картинка возле списка-->
+                  <div class="hp_icon icon_paint"></div>
+                  <li class="hp_item">Яркие насыщенные цвета</li>
+                  <!--Картинка возле списка-->
+                  <div class="hp_icon icon_star"></div>
+                  <!--Картинка возле списка-->
+                  <li class="hp_item">Кристальная четкость изображения</li>
+                  <!--Картинка возле списка-->
+                  <div class="hp_icon icon_smooth"></div>
+                  <li class="hp_item">Быстрые движения и плавный геймплей</li>
+                </ul>
+                <!--Кнопка после текста-->
+                <button type="submit" class="hp_button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Общий блок buy_game-->
+      <section class="buy_game">
+        <!--Кастомный контейнер для того что бы все было как в макете за границами основого контейнера-->
+        <div class="castum_container">
+          <!--Общий блок с контентом buy_game-->
+          <div class="buy_game_content">
+            <!--Картинка-->
+            <div class="buy_game_img"></div>
+            <!--Блок с текстом-->
+            <div class="buy_game_text">
+              <!--Загаловок-->
+              <h2 class="buy_game_title">Купить игру Cyberpunk 2077</h2>
+              <!--Блок с листом-->
+              <div class="block_list">
+                <!--Загаловок листа-->
+                <h6 class="list_title">В комплект входит:</h6>
+                <!--Лист-->
+                <ul class="buy_list">
+                  <!--Иконка в начале текста-->
+                  <div class="buy_icon case_with_code"></div>
+                  <li class="buy_item">Футляр с игровыми дисками</li>
+                  <!--Иконка в начале текста-->
+                  <div class="buy_icon case_with_code_2"></div>
+                  <li class="buy_item">
+                    Футляр с кодом для загрузки игры и дисками (pc)
+                  </li>
+                  <!--Иконка в начале текста-->
+                  <div class="buy_icon directory_of_information"></div>
+                  <li class="buy_item">
+                    Справочник с информацией об игровом мире
+                  </li>
+                </ul>
+              </div>
+              <!--Блок с платформами-->
+              <div class="platform">
+                <!--Блок с текстом-->
+                <div class="platform_text">
+                  <!--Загаловок-->
+                  <h6 class="platform_title">Выберите платформу:</h6>
+                  <!--Блок с картинками платформы-->
+                  <div class="platform_logo_block">
+                    <div class="platform_img pc"></div>
+                    <div class="platform_img xbox"></div>
+                    <div class="platform_img stadia"></div>
+                    <div class="platform_img ps4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Блок footer-->
+    <footer class="footer">
+      <!--Основной контейнер-->
+      <div class="container">
+        <!--Блок с контентом footer-->
+        <div class="footer_content">
+          <!--Общий блок с контентом-->
+          <div class="footer_block">
+            <!--Блок с лого игры и компании-->
+            <div class="footer_logo">
+              <img
+                src="./image/cyberounk_logo.png"
+                alt="CyberPunk logo"
+                class="cyberpunk_logo_footer"
+              />
+              <img
+                src="./image/CD_Projekt_logo%201.svg"
+                alt="CD Projekt Red"
+                class="cd_project"
+              />
+            </div>
+            <!--Блок с ссылками-->
+            <div class="footer_link">
+              <ul class="footer_list">
+                <li class="footer_item">
+                  <a href="#">Лицензия</a>
+                </li>
+                <li class="footer_item">
+                  <a href="#">Политика конфиденцальности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Черная палоска в конце под footer-->
+      <div class="block_end">
+        <p class="p_end">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</p>
+      </div>
+    </footer>
+  </body>
+</html>
