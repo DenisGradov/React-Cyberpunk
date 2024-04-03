@@ -16,6 +16,7 @@ function App() {
   PHOTO_SRC["disk"] = "../public/images/icons/disk.png";
   PHOTO_SRC["wysiwyg"] = "../public/images/icons/wysiwyg.png";
   PHOTO_SRC["color_lens"] = "../public/images/icons/color_lens.png";
+  PHOTO_SRC["CD_Projekt_logo"] = "../public/images/other/CD_Projekt_logo 1.svg";
   PHOTO_SRC["auto_awesome_motion"] =
     "../public/images/icons/auto_awesome_motion.png";
   PHOTO_SRC["auto_awesome"] = "../public/images/icons/auto_awesome.png";
@@ -442,6 +443,33 @@ function App() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+        <div className={styles.footer}>
+          <div className={styles.footerTop}>
+            <div className={styles.footerTopLeft}>
+              <img
+                className={styles.footerTopLeft__img}
+                src={PHOTO_SRC["logo"]}
+              />
+              <img
+                className={styles.footerTopLeft__img}
+                src={PHOTO_SRC["CD_Projekt_logo"]}
+              />
+            </div>
+            <div className={styles.footerTopRight}>
+              <a href="" className={styles.footerTopRight__link}>
+                Лицензия
+              </a>
+              <a href="" className={styles.footerTopRight__link}>
+                Политика конфиденциальности
+              </a>
+            </div>
+          </div>
+          <div className={styles.footerBottom}>
+            <h2 className={styles.footerBottom__text}>
+              CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®
+            </h2>
           </div>
         </div>
       </div>
