@@ -12,6 +12,9 @@ function App() {
   PHOTO_SRC["twich"] = "../public/images/icons/twich.svg";
   PHOTO_SRC["twitter"] = "../public/images/icons/twitter.svg";
   PHOTO_SRC["youtube"] = "../public/images/icons/youtube.svg";
+  PHOTO_SRC["collections"] = "../public/images/icons/collections.png";
+  PHOTO_SRC["disk"] = "../public/images/icons/disk.png";
+  PHOTO_SRC["wysiwyg"] = "../public/images/icons/wysiwyg.png";
   PHOTO_SRC["color_lens"] = "../public/images/icons/color_lens.png";
   PHOTO_SRC["auto_awesome_motion"] =
     "../public/images/icons/auto_awesome_motion.png";
@@ -36,6 +39,12 @@ function App() {
     "../public/images/other/hp-2 logo.svg",
     "../public/images/other/Group 235.svg",
     "../public/images/other/c06611743 1.png",
+    "../public/images/other/bg3.jpg",
+    "../public/images/other/Frame 13.png",
+    "../public/images/other/stadia logo.png",
+    "../public/images/other/Playstation logo.svg",
+    "../public/images/other/PC.svg",
+    "../public/images/other/xbox-one-3 logo.svg",
   ];
 
   const [actualHeaderPhoto, setActualHeaderPhoto] = useState(1);
@@ -361,6 +370,77 @@ function App() {
               <button className={styles.yellowBlockContentRight__button}>
                 Подробнее
               </button>
+            </div>
+          </div>
+        </div>
+        <div className={styles.aboutBuy}>
+          <div className={styles.aboutBuyLeft}>
+            <img
+              className={styles.aboutBuyLeft__bg}
+              src={PHOTO_SRC["other"][9]}
+            />
+          </div>
+          <div className={styles.aboutBuyRight}>
+            <h2 className={styles.aboutBuyRight__title}>
+              Купить игру Cyberpunk 2077
+            </h2>
+            <h2 className={styles.aboutBuyRight__listTitle}>
+              В комплект входит:
+            </h2>
+            <div className={styles.aboutBuyRightlist}>
+              <div className={styles.aboutBuyRightlistItem}>
+                <img
+                  className={styles.aboutBuyRightlistItem__img}
+                  src={PHOTO_SRC["disk"]}
+                />
+                <h2 className={styles.aboutBuyRightlistItem__text}>
+                  Футляр с игровыми дисками
+                </h2>
+              </div>
+              <div className={styles.aboutBuyRightlistItem}>
+                <img
+                  className={styles.aboutBuyRightlistItem__img}
+                  src={PHOTO_SRC["wysiwyg"]}
+                />
+                <h2 className={styles.aboutBuyRightlistItem__text}>
+                  Футляр с кодом для загрузки игры и дисками (pc)
+                </h2>
+              </div>
+              <div className={styles.aboutBuyRightlistItem}>
+                <img
+                  className={styles.aboutBuyRightlistItem__img}
+                  src={PHOTO_SRC["collections"]}
+                />
+                <h2 className={styles.aboutBuyRightlistItem__text}>
+                  Справочник с информацией об игровом мире
+                </h2>
+              </div>
+            </div>
+
+            <h2 className={styles.aboutBuyRight__listTitle2}>
+              Выберите платформу:
+            </h2>
+            <div className={styles.aboutBuyRightPlatforms}>
+              <div className={styles.aboutBuyRightPlatformsLine}>
+                <img
+                  className={styles.aboutBuyRightPlatformsLine__img}
+                  src={PHOTO_SRC["other"][10]}
+                />
+                <img
+                  className={styles.aboutBuyRightPlatformsLine__img}
+                  src={PHOTO_SRC["other"][14]}
+                />
+              </div>
+              <div className={styles.aboutBuyRightPlatformsLine}>
+                <img
+                  className={styles.aboutBuyRightPlatformsLine__img}
+                  src={PHOTO_SRC["other"][11]}
+                />
+                <img
+                  className={styles.aboutBuyRightPlatformsLine__img}
+                  src={PHOTO_SRC["other"][12]}
+                />
+              </div>
             </div>
           </div>
         </div>
