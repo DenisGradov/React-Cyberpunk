@@ -12,6 +12,10 @@ function App() {
   PHOTO_SRC["twich"] = "../public/images/icons/twich.svg";
   PHOTO_SRC["twitter"] = "../public/images/icons/twitter.svg";
   PHOTO_SRC["youtube"] = "../public/images/icons/youtube.svg";
+  PHOTO_SRC["color_lens"] = "../public/images/icons/color_lens.png";
+  PHOTO_SRC["auto_awesome_motion"] =
+    "../public/images/icons/auto_awesome_motion.png";
+  PHOTO_SRC["auto_awesome"] = "../public/images/icons/auto_awesome.png";
   PHOTO_SRC["header-photos"] = [
     "../public/images/header-photos/pc/1.jpg",
     "../public/images/header-photos/pc/2.jpg",
@@ -29,6 +33,9 @@ function App() {
     "../public/images/other/yellow line.png",
     "../public/images/other/xbox.png",
     "../public/images/other/ps.png",
+    "../public/images/other/hp-2 logo.svg",
+    "../public/images/other/Group 235.svg",
+    "../public/images/other/c06611743 1.png",
   ];
 
   const [actualHeaderPhoto, setActualHeaderPhoto] = useState(1);
@@ -282,6 +289,80 @@ function App() {
             className={styles.blockWithFormContent__endBg}
             src={PHOTO_SRC["other"][1]}
           />
+        </div>
+        <div className={styles.yellowBlock}>
+          <div className={styles.yellowBlockContent}>
+            <div className={styles.yellowBlockContentLeft}>
+              <img
+                className={styles.yellowBlockContentLeft__main}
+                src={PHOTO_SRC["other"][8]}
+              />
+              <div className={styles.yellowBlockContentLeftCompanys}>
+                <img
+                  className={styles.yellowBlockContentLeftCompanys__comp}
+                  src={PHOTO_SRC["other"][6]}
+                />
+                <img
+                  className={styles.yellowBlockContentLeftCompanys__comp}
+                  src={PHOTO_SRC["other"][7]}
+                />
+                <img
+                  className={styles.yellowBlockContentLeftCompanys__comp}
+                  src={PHOTO_SRC["logo"]}
+                />
+              </div>
+            </div>
+            <div className={styles.yellowBlockContentRight}>
+              <h2 className={styles.yellowBlockContentRight__title}>
+                Полное погружение вместе с HP
+              </h2>
+              <h3 className={styles.yellowBlockContentRight__text}>
+                Погрузись в современные экшен-игры с реалистичным изображением с
+                помощью монитора с диагональю 23,8 дюйма, созданном для
+                отображения максимально насыщенных цветов. Успевай реагировать
+                на любые события с временем отклика 1 мс и частотой в 144 Гц!
+              </h3>
+              <div className={styles.yellowBlockContentRightAbout}>
+                <div className={styles.yellowBlockContentRightAboutContent}>
+                  <img
+                    className={styles.yellowBlockContentRightAboutContent__img}
+                    src={PHOTO_SRC["color_lens"]}
+                  />
+                  <h2
+                    className={styles.yellowBlockContentRightAboutContent__text}
+                  >
+                    Яркие насыщенные цвета
+                  </h2>
+                </div>
+                <div className={styles.yellowBlockContentRightAboutContent}>
+                  <img
+                    className={styles.yellowBlockContentRightAboutContent__img}
+                    src={PHOTO_SRC["auto_awesome_motion"]}
+                  />
+                  <h2
+                    className={styles.yellowBlockContentRightAboutContent__text}
+                  >
+                    Кристальная четкость изображения
+                  </h2>
+                </div>
+                <div className={styles.yellowBlockContentRightAboutContent}>
+                  <img
+                    className={styles.yellowBlockContentRightAboutContent__img}
+                    src={PHOTO_SRC["auto_awesome"]}
+                  />
+                  <h2
+                    className={styles.yellowBlockContentRightAboutContent__text}
+                  >
+                    Быстрые движения и плавный геймплей
+                  </h2>
+                </div>
+              </div>
+
+              <button className={styles.yellowBlockContentRight__button}>
+                Подробнее
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
