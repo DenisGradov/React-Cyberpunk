@@ -5,48 +5,47 @@ import { useEffect } from "react";
 
 function App() {
   const PHOTO_SRC = {};
-  PHOTO_SRC["logo"] = "./../public/images/Logo.png";
-  PHOTO_SRC["promotion"] = "./../public/images/other/promotion.svg";
-  PHOTO_SRC["fb"] = "./../public/images/icons/fb.png";
-  PHOTO_SRC["inst"] = "./../public/images/icons/inst.svg";
-  PHOTO_SRC["twich"] = "./../public/images/icons/twich.svg";
-  PHOTO_SRC["twitter"] = "./../public/images/icons/twitter.svg";
-  PHOTO_SRC["youtube"] = "./../public/images/icons/youtube.svg";
-  PHOTO_SRC["collections"] = "./../public/images/icons/collections.png";
-  PHOTO_SRC["disk"] = "./../public/images/icons/disk.png";
-  PHOTO_SRC["wysiwyg"] = "./../public/images/icons/wysiwyg.png";
-  PHOTO_SRC["color_lens"] = "./../public/images/icons/color_lens.png";
-  PHOTO_SRC["CD_Projekt_logo"] =
-    "./../public/images/other/CD_Projekt_logo 1.svg";
+  PHOTO_SRC["logo"] = "./public/images/Logo.png";
+  PHOTO_SRC["promotion"] = "./public/images/other/promotion.svg";
+  PHOTO_SRC["fb"] = "./public/images/icons/fb.png";
+  PHOTO_SRC["inst"] = "./public/images/icons/inst.svg";
+  PHOTO_SRC["twich"] = "./public/images/icons/twich.svg";
+  PHOTO_SRC["twitter"] = "./public/images/icons/twitter.svg";
+  PHOTO_SRC["youtube"] = "./public/images/icons/youtube.svg";
+  PHOTO_SRC["collections"] = "./public/images/icons/collections.png";
+  PHOTO_SRC["disk"] = "./public/images/icons/disk.png";
+  PHOTO_SRC["wysiwyg"] = "./public/images/icons/wysiwyg.png";
+  PHOTO_SRC["color_lens"] = "./public/images/icons/color_lens.png";
+  PHOTO_SRC["CD_Projekt_logo"] = "./public/images/other/CD_Projekt_logo 1.svg";
   PHOTO_SRC["auto_awesome_motion"] =
-    "./../public/images/icons/auto_awesome_motion.png";
-  PHOTO_SRC["auto_awesome"] = "./../public/images/icons/auto_awesome.png";
+    "./public/images/icons/auto_awesome_motion.png";
+  PHOTO_SRC["auto_awesome"] = "./public/images/icons/auto_awesome.png";
   PHOTO_SRC["header-photos"] = [
-    "./../public/images/header-photos/pc/1.jpg",
-    "./../public/images/header-photos/pc/2.jpg",
-    "./../public/images/header-photos/pc/3.jpg",
+    "./public/images/header-photos/pc/1.jpg",
+    "./public/images/header-photos/pc/2.jpg",
+    "./public/images/header-photos/pc/3.jpg",
   ];
   PHOTO_SRC["aboutCity"] = [
-    "./../public/images/aboutCity/1.png",
-    "./../public/images/aboutCity/2.jpg",
-    "./../public/images/aboutCity/3.png",
+    "./public/images/aboutCity/1.png",
+    "./public/images/aboutCity/2.jpg",
+    "./public/images/aboutCity/3.png",
   ];
   PHOTO_SRC["other"] = [
-    "./../public/images/other/bg1.png",
-    "./../public/images/other/bg2.png",
-    "./../public/images/other/blue line.png",
-    "./../public/images/other/yellow line.png",
-    "./../public/images/other/xbox.png",
-    "./../public/images/other/ps.png",
-    "./../public/images/other/hp-2 logo.svg",
-    "./../public/images/other/Group 235.svg",
-    "./../public/images/other/c06611743 1.png",
-    "./../public/images/other/bg3.jpg",
-    "./../public/images/other/Frame 13.png",
-    "./../public/images/other/stadia logo.png",
-    "./../public/images/other/Playstation logo.svg",
-    "./../public/images/other/PC.svg",
-    "./../public/images/other/xbox-one-3 logo.svg",
+    "./public/images/other/bg1.png",
+    "./public/images/other/bg2.png",
+    "./public/images/other/blue line.png",
+    "./public/images/other/yellow line.png",
+    "./public/images/other/xbox.png",
+    "./public/images/other/ps.png",
+    "./public/images/other/hp-2 logo.svg",
+    "./public/images/other/Group 235.svg",
+    "./public/images/other/c06611743 1.png",
+    "./public/images/other/bg3.jpg",
+    "./public/images/other/Frame 13.png",
+    "./public/images/other/stadia logo.png",
+    "./public/images/other/Playstation logo.svg",
+    "./public/images/other/PC.svg",
+    "./public/images/other/xbox-one-3 logo.svg",
   ];
 
   const [actualHeaderPhoto, setActualHeaderPhoto] = useState(1);
